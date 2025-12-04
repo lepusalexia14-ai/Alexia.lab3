@@ -1,0 +1,353 @@
+/*Body*/
+body{
+    background-color:  #EFF1F2;
+}
+/* Antet*/ 
+.logo{
+    font-weight: bold;}
+
+.barasus {
+    font-weight: bold;
+    top: 0px;
+    position: sticky;
+    background: #f7eaea;
+    padding: 10px 25px;
+    padding: 10px 15px;}
+
+.continut {
+    background: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);}
+
+.containerlogo {
+    flex: 0 0 auto;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 2px;}
+
+.dreaptah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e30613;
+    margin-right: 20px;
+    }
+
+.meniuh {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95em;}
+
+.meniuh a {
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    padding: 6px 0;
+}
+
+.numar {
+    background: red;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 4px;
+    font-weight: bold;}
+
+.despartire {
+    width: 1px;
+    height: 18px;
+    background: #ccc;
+    margin: 0 8px;}
+
+.emoji {
+    font-size: 1em;
+    margin-right: 4px;}
+
+.meniuutilizator {
+    display: flex;
+    align-items: center;
+    gap: 15px;}
+
+.cauta {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1em;
+    cursor: pointer;}
+
+.cauta:hover {
+     background: #e0e0e0;}
+
+.depunere {
+    background: #f0f0f0;
+    color: #111;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;}
+
+.depunere:hover {
+    background: #e0e0e0;}
+
+.utilizator {
+    display: flex;
+    align-items: center;
+    gap: 8px;}
+
+.nume {
+    font-weight: 500;}
+
+.balanta {
+    font-size: 0.85em;
+    color: #666;
+}
+
+.poza {width: 32px;
+    height: 32px;
+    background: url('https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png') no-repeat center/cover; 
+    border-radius: 50%;}
+
+/* Partea Dreapta*/
+
+.bilet-card { 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-color: #cbcaca; 
+} 
+.page { 
+    display: flex;
+    min-height: 100vh; 
+    background-color: #EFF1F2 ;
+    margin-left: 20px;
+} 
+.sidebar { 
+    width: 250px; 
+    background: #EFF1F2; 
+    padding: 20px; 
+    border-right: 1px solid #EFF1F2; 
+} 
+.sidebar h2 { 
+    font-size: 13px; 
+    margin-bottom: 20px; 
+    color: #555; 
+    margin-left: 15px;
+} 
+.sidebar .menu-item-1 a,.sidebar .menu-item-2 a,.sidebar .menu-item-3 a { 
+    display: block; 
+    padding: 8px 16px; 
+    color: #555; 
+    font-weight: 600; 
+    text-decoration: none; 
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    margin-bottom: 8px; 
+} 
+.sidebar .menu-item-1 a:hover,.sidebar .menu-item-2 a:hover,.sidebar .menu-item-3 a:hover { 
+    background-color: #cbcaca;
+    background-blend-mode: lighten;
+    color: #d40000; 
+    cursor: pointer; 
+} 
+.menu-item-1.active a,.menu-item-2.active a,.menu-item-3.active a { 
+    color: #d40000; 
+    font-weight: 700; 
+    background-color: #9c9c9c; 
+} 
+.SuperAvantaj, .SuperBonus {
+    width: 220px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.SuperAvantaj input, .SuperBonus input {
+    display: none;
+}
+
+.SuperAvantaj-title, .SuperBonus-title {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: left;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SuperAvantaj-title .icon, .SuperBonus-title .icon {
+    color: #d4af37;
+    margin-right: 8px;
+}
+
+.SuperAvantaj-title .arrow .SuperBonus {
+    transition: transform 0.2s ease;
+}
+
+.SuperAvantaj-content, .SuperBonus-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.SuperAvantaj input:checked + .SuperAvantaj-title + .SuperAvantaj-content,.SuperBonus input:checked + .SuperBonus-title + .SuperBonus-content {
+    max-height: 200px; 
+}
+
+.SuperAvantaj input:checked + .SuperAvantaj-title .arrow, .SuperBonus input:checked + .SuperBonus-title .arrow {
+    transform: rotate(180deg);
+}
+.SuperAvantaj-content p, .SuperBonus-content p {
+    margin: 5px 0 15px 0;
+    color: #444;
+    line-height: 1.4;
+}
+.learn-more {
+    color: #E30613;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu2 { 
+    margin-top: 15px; 
+    padding: 10px; 
+    background: #fafafa; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    cursor: pointer; 
+} 
+/* --- CONTENT --- */ 
+.content { 
+    flex: 1; 
+    padding: 40px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:flex-start; 
+    align-items:flex-start; 
+} 
+.text{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+}
+.content h1 { 
+    font-size: 24px; 
+    color: #d40000; 
+    margin-bottom: 50px;
+    justify-content: flex-start; 
+    text-align: center;
+} 
+.buton-rosu{ 
+    display: inline-flex; 
+    background-color: #E30613; 
+    color: white; 
+    font-weight: 600; 
+    padding: 10px 22px; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    font-family: Arial, sans-serif; 
+    font-size: 15px; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 169px;
+} 
+.buton-iar{ 
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+} 
+figure{ 
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
+} 
+figcaption{ 
+    text-align: center;
+    font-family:'Trebuchet MS', Helvetica, sans-serif; 
+    color: gray; 
+    margin-left: 169px;
+} 
+.content-section { 
+    display: none; 
+} 
+.content-section:target { 
+    display: block; 
+} 
+.bilet{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-self:center;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.bilet-wrapper { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    width: 250px; 
+    gap: 20px; 
+    margin-bottom: 60px; 
+    margin-right: 169px;
+} 
+/* Search Box */ 
+.search-bilet { 
+    background: rgb(255, 255, 255); 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+    width: 100%; 
+}
+.search-bilet input { 
+    width: 100%; 
+    height: 45px; 
+    border-radius: 10px; 
+    border: 1px solid #adacac; 
+    background-color: #f4f2f2;
+    padding-left: 10px; 
+    font-size: 15px; 
+    outline: none; 
+} 
+/* Card */ 
+.bilet-card { 
+    background: white; 
+    padding: 30px 30px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+    width: 100%; 
+    text-align: center; 
+    margin-right: 20px; 
+    border-radius: 10px;
+} 
+.bilet-card img { 
+    width: 150px; 
+    margin-bottom: 10px; 
+    opacity: 0.9; 
+} 
+.bilet-card p { 
+    color: #6c7a86; 
+    font-size: 15px; 
+}
